@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="ros_playground" type="talker" name="talker" output="screen" respawn="true"/>
+    <node pkg="ros_playground" type="listener.py" name="listener" output="screen" respawn="true"/>
+</launch>

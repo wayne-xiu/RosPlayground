@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find ros_playground)/launch/talker_cpp.launch"/>
+    <node pkg="ros_playground" type="listener" name="listener" output="screen" respawn="true"/>
+</launch>
