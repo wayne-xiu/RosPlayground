@@ -12,6 +12,7 @@ roscpp
 rospy
 std_msgs
 message_generation
+tf
 )
 
 ## System dependencies are found with CMake's conventions
@@ -147,6 +148,7 @@ ${catkin_INCLUDE_DIRS}
 add_executable(talker src/talker.cpp)
 add_executable(listener src/listener.cpp)
 add_executable(rgb_led_pub src/rgb_led_pub.cpp)
+add_executable(tf_transform src/tf_transform.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -165,6 +167,7 @@ add_executable(rgb_led_pub src/rgb_led_pub.cpp)
 target_link_libraries(talker ${catkin_LIBRARIES})
 target_link_libraries(listener ${catkin_LIBRARIES})
 target_link_libraries(rgb_led_pub ${catkin_LIBRARIES})
+target_link_libraries(tf_transform ${catkin_LIBRARIES})
 
 #############
 ## Install ##
